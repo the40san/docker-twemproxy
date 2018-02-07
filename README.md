@@ -7,12 +7,13 @@ twemproxy for docker
 docker run -d the40san/twemproxy
 ```
 
-or specify the40san/twemproxy in your own Dockerfile's FROM
+or specify `the40san/twemproxy` in your own Dockerfile's FROM
 
 ```
+FROM my_conf as config
 FROM the40san/twemproxy
 
-COPY my_conf.yml /nutcracker/etc/
+COPY --from=config /my_conf.yml /nutcracker/etc/
 ENV NUTCRACKER_CONF="my_conf.yml"
 ```
 
