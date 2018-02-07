@@ -12,7 +12,7 @@ or specify the40san/twemproxy in your own Dockerfile's FROM
 ```
 FROM the40san/twemproxy
 
-COPY my_conf.yml /nutcracker/etc
+COPY my_conf.yml /nutcracker/etc/
 ENV NUTCRACKER_CONF="my_conf.yml"
 ```
 
