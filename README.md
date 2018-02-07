@@ -14,7 +14,7 @@ FROM the40san/twemproxy
 
 COPY my_conf.yml /twemproxy/etc
 ENV NUTCRACKER_CONF="my_conf.yml"
-``
+```
 
 ## Environment variables
 
