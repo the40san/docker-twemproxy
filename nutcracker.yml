@@ -1,5 +1,5 @@
 default:
-  listen: 127.0.0.1:22121
+  listen: 0.0.0.0:22121
   hash: fnv1a_64
   distribution: ketama
   auto_eject_hosts: true
@@ -7,4 +7,4 @@ default:
   server_retry_timeout: 2000
   server_failure_limit: 1
   servers:
-    - 127.0.0.1:6379:1 server1
+    - redis:6379:1 server1
